@@ -58,7 +58,7 @@ const ignoreStarters = [
 async function dlWikiChunk(urlEnding: string): Promise<DlWikiLinkType[]> {
   try {
     const res = await fetch(
-      `https://raw.githubusercontent.com/siam3310/fmhy/main/${urlEnding}.md`
+      `https://raw.githubusercontent.com/siam3310/fmhyedit/main/${urlEnding}.md`
     );
 
     const data = await res.text();
